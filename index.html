@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It Depends</title>
+    <link
+      rel="icon"
+      href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🤷</text></svg>'
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-labelledby="page-title">
+        <h1 id="page-title">It Depends ⚖️🤷</h1>
+        <p class="subtitle">
+          Skip a consultation with your data steward and legal support with this
+          tool. It is 100% accurate and will always give you the correct answer.
+        </p>
+        <a class="about-link" href="#about">About</a>
+      </section>
+
+      <section
+        class="panel step-panel"
+        id="tool"
+        aria-labelledby="step-1-title"
+      >
+        <div class="step-heading">
+          <span class="step-number" aria-hidden="true">01</span>
+          <div>
+            <p class="step-label">Step 1</p>
+            <h2 id="step-1-title">Choose a data type</h2>
+          </div>
+        </div>
+
+        <div
+          class="choice-grid data-types"
+          id="data-type-options"
+          role="radiogroup"
+          aria-label="Data type options"
+        ></div>
+      </section>
+
+      <section
+        class="panel step-panel is-disabled"
+        id="question-step"
+        aria-labelledby="step-2-title"
+        aria-hidden="true"
+      >
+        <div class="step-heading">
+          <span class="step-number" aria-hidden="true">02</span>
+          <div>
+            <p class="step-label">Step 2</p>
+            <h2 id="step-2-title">Choose a question</h2>
+          </div>
+        </div>
+
+        <div
+          class="choice-grid questions"
+          id="question-options"
+          role="radiogroup"
+          aria-label="Question options"
+        ></div>
+      </section>
+
+      <section class="actions panel" aria-label="Assessment action">
+        <button
+          class="primary-button"
+          id="show-answer-button"
+          type="button"
+          disabled
+        >
+          See your answer
+        </button>
+      </section>
+
+      <section
+        class="panel result-panel hidden"
+        id="result-panel"
+        aria-live="polite"
+        aria-labelledby="result-title"
+      >
+        <p class="result-kicker">Assessment result</p>
+        <h2 id="result-title" class="result-answer"></h2>
+        <dl class="result-meta sr-only" aria-hidden="true">
+          <div>
+            <dt>Data type</dt>
+            <dd id="result-data-type"></dd>
+          </div>
+          <div>
+            <dt>Question</dt>
+            <dd id="result-question"></dd>
+          </div>
+        </dl>
+        <button class="secondary-button" id="reset-button" type="button">
+          Try another question
+        </button>
+      </section>
+
+      <section class="panel about-panel" id="about" aria-label="About this project">
+        <div class="about-copy">
+          <p>
+            This software is released under the MIT License. Repository:
+            <a href="https://github.com/pedrohserrano/it-depends-rdm">
+              github.com/pedrohserrano/it-depends-rdm
+            </a>
+          </p>
+          <p>
+            Questions related to data management rarely produces one
+            universal answer. The applicable response depends on context,
+            discipline, infrastructure, applicable regulation, contracts, and
+            institutional policy. Please contact your data steward, legal support, or RDM team for real advice.
+          </p>
+          <p>
+            This tool is a comic reminder that when handling research data, we all benefit from learning the regulatory frameworks and
+            standards that apply to research projects, because it always depends.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>For educational purposes only. Real uncertainty may vary.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
