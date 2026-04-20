@@ -24,9 +24,8 @@ const answers = [
   "Yes and no.",
   "In principle, maybe. In practice, it depends.",
   "In some cases, maybe. In other cases, as well.",
-  "Not necessarily. But also, possibly.",
-  "It depends on different factors.",
-  "Short answer: it depends. The long answer is longer."
+  "Not necessarily. But also, possibly, so it depends.",
+  "It depends on different factors."
 ];
 
 const state = {
