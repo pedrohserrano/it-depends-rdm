@@ -1,0 +1,20 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: It Depends RDM
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Pedro
+    family-names: Hernandez Serrano
+    email: p.hernandezserrano@maastrichtuniversity.nl
+    affiliation: Maastricht University
+repository-code: 'https://github.com/pedrohserrano/it-depends-rdm'
+abstract: >-
+  A tiny static and not so serious web app for RDM support:
+  choose a data type, choose a question, and receive the
+  most common expert answer.
+license: MIT
